@@ -1,0 +1,77 @@
+body {
+    background: rgb(0,22,255);
+    background: linear-gradient(0deg, rgba(0,22,255,1) 0%, rgba(88,117,255,1) 90%);
+    font-weight: 500;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.frame {
+    width: min(100%, 452px);
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 30px 29px 0px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.title {
+    position: relative;
+    padding-left: 15px;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background: rgb(0,22,255);
+    background: linear-gradient(0deg, rgba(0,22,255,1) 0%, rgba(88,117,255,1) 90%);
+    left: 0;
+}
+
+.title h1 {
+    color: black;
+    font-size: 2.2rem;
+}
+
+.title p {
+    color: gray;
+    font-size: .9rem;
+    
+}
+
+.formSelect {
+    padding-top: 20px;
+    display: grid;
+    position: relative;
+    gap: .5rem;
+}
+
+.formSelect input {
+    width: 100%;
+    padding: 12px 12px 12px;
+    border-radius: 5px;
+    color: black;
+}
+
+.formSelect option {
+    position: absolute;
+    top: 13px;
+    color: gray;
+}
+
+button{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.sig {
+    background: white;
+    color: rgb(0, 37, 248);;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 37, 248);
+}
