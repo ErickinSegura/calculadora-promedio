@@ -2,6 +2,7 @@
 <head>
   <title>Calculadora en JavaScript</title>
   <link rel="stylesheet" href="stylecalc.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -14,24 +15,21 @@
         
         <div class="formSelect">
             
-          Valor 1: <input type="text" id="num1" value="100" /><br><br>
-          Valor 2: <input type="text" id="num2" /><br><br>  
+          <p>Bloque 1: </p> <input type="number" id="blq1" />
+          <p>Bloque 2: </p><input type="number" id="blq2" />
+          <p>Bloque 3: </p><input type="number" id="blq3" />
+          
+          <p>UDF 1: </p><input type="number" id="UDF1" />
+          <p>UDF 2: </p><input type="number" id="UDF2" />
+          <p>UDF 3: </p><input type="number" id="UDF3" />
+          <p>UDF 4: </p><input type="number" id="UDF4" />
+
+          <p>Optativa: </p><input type="number" id="opta" /><br><br>
        
-          <button type="button" onclick="calcular()">Calcular</button>
+          <button type="button" class="calc" onclick="calcular()">Calcular</button>
           <br><br>
-          Resultado: <input type="text" id="resultado" disabled />
+          Resultado: <input type="number" id="resultado" disabled />
         </div>
     </div>
-
-    <script>
-      function calcular() {
-      var num1 = parseFloat(document.getElementById("num1").value);
-      var num2 = parseFloat(document.getElementById("num2").value);
-      var resultado = document.getElementById("resultado");
-      resultado.value = (num1 + num2) / 2;
-    
-  }
-    </script>
-
 </body>
 </html>
